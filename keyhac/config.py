@@ -29,6 +29,7 @@ def configure(keymap):
     keymap_global[ "C-S-X"   ] = keymap.command_ClipboardRotate   # 直近の履歴を末尾に回す
     keymap_global[ "C-S-A-X" ] = keymap.command_ClipboardRemove   # 直近の履歴を削除
 
+    # カーソル移動
     keymap_global[ "LC-H" ] = "Left"
     keymap_global[ "LC-J" ] = "Down"
     keymap_global[ "LC-K" ] = "Up"
@@ -37,6 +38,12 @@ def configure(keymap):
     keymap_global[ "LC-O" ] = "End"
     keymap_global[ "LS-LC-U" ] = "LC-Home"
     keymap_global[ "LS-LC-O" ] = "LC-End"
+
+    # 文字選択
+    keymap_global[ "LC-S-H" ] = "S-Left"
+    keymap_global[ "LC-S-J" ] = "S-Down"
+    keymap_global[ "LC-S-K" ] = "S-Up"
+    keymap_global[ "LC-S-L" ] = "S-Right"
 
     # クリップボード履歴の最大数 (デフォルト:1000)
     keymap.clipboard_history.maxnum = 1000
