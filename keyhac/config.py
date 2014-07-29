@@ -36,14 +36,14 @@ def configure(keymap):
     keymap_global[ "LC-L" ] = "Right"
     keymap_global[ "LC-U" ] = "Home"
     keymap_global[ "LC-O" ] = "End"
-    keymap_global[ "LS-LC-U" ] = "LC-Home"
-    keymap_global[ "LS-LC-O" ] = "LC-End"
 
     # 文字選択
     keymap_global[ "LC-S-H" ] = "S-Left"
     keymap_global[ "LC-S-J" ] = "S-Down"
     keymap_global[ "LC-S-K" ] = "S-Up"
     keymap_global[ "LC-S-L" ] = "S-Right"
+    keymap_global[ "LS-LC-U" ] = "S-Home"
+    keymap_global[ "LS-LC-O" ] = "S-End"
 
     # クリップボード履歴の最大数 (デフォルト:1000)
     keymap.clipboard_history.maxnum = 1000
