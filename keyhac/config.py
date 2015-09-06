@@ -30,20 +30,28 @@ def configure(keymap):
     keymap_global[ "C-S-A-X" ] = keymap.command_ClipboardRemove   # 直近の履歴を削除
 
     # カーソル移動
-    keymap_global[ "LC-H" ] = "Left"
-    keymap_global[ "LC-J" ] = "Down"
-    keymap_global[ "LC-K" ] = "Up"
-    keymap_global[ "LC-L" ] = "Right"
-    keymap_global[ "LC-U" ] = "Home"
-    keymap_global[ "LC-O" ] = "End"
+    keymap_global[ "RC-H" ] = "Left"
+    keymap_global[ "RC-B" ] = "Left"
+    keymap_global[ "RC-J" ] = "Down"
+    keymap_global[ "RC-N" ] = "Down"
+    keymap_global[ "RC-K" ] = "Up"
+    keymap_global[ "RC-P" ] = "Up"
+    keymap_global[ "RC-L" ] = "Right"
+    keymap_global[ "RC-F" ] = "Right"
+    keymap_global[ "RC-A" ] = "Home"
+    keymap_global[ "RC-E" ] = "End"
+    keymap_global[ "RC-J" ] = "Enter"
+
+    keymap_global[ "RC-H" ] = "Back"
+    keymap_global[ "RC-D" ] = "Delete"
 
     # 文字選択
-    keymap_global[ "LC-S-H" ] = "S-Left"
-    keymap_global[ "LC-S-J" ] = "S-Down"
-    keymap_global[ "LC-S-K" ] = "S-Up"
-    keymap_global[ "LC-S-L" ] = "S-Right"
-    keymap_global[ "LS-LC-U" ] = "S-Home"
-    keymap_global[ "LS-LC-O" ] = "S-End"
+    keymap_global[ "RC-S-H" ] = "S-Left"
+    keymap_global[ "RC-S-J" ] = "S-Down"
+    keymap_global[ "RC-S-K" ] = "S-Up"
+    keymap_global[ "RC-S-L" ] = "S-Right"
+    keymap_global[ "LS-RC-A" ] = "S-Home"
+    keymap_global[ "LS-RC-E" ] = "S-End"
 
     # クリップボード履歴の最大数 (デフォルト:1000)
     keymap.clipboard_history.maxnum = 1000
