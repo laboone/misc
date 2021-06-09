@@ -58,7 +58,3 @@ def configure(keymap):
 
     # クリップボード履歴として保存する合計最大サイズ (デフォルト:10MB)
     keymap.clipboard_history.quota = 10*1024*1024
-
-
-
-
